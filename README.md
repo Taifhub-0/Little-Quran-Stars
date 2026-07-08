@@ -5,9 +5,9 @@ Little Quran Stars is an Android application designed to help children memorize 
 
 ## Preview
 <p float="left">
-  <img src="screenshots/home.png" width="200" />
-  <img src="screenshots/surah_list.png" width="200" />
-  <img src="screenshots/memorization.png" width="200" />
+  <img src="screenshots/home.png" width="200" hight="420" />
+  <img src="screenshots/surah_list.png" width="200" hight="420" />
+  <img src="screenshots/memorization.png" width="200" hight="420" />
 </p>
 
 ## Features
