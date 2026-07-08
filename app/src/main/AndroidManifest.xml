@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quranapp_part1">
+
+    <!-- ===== الإنترنت لجلب الآيات من AlQuran Cloud API ===== -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuranKids">
+
+        <!-- الشاشة الرئيسية -->
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- شاشة اختيار السورة -->
+        <activity android:name=".SurahListActivity" android:exported="false"/>
+
+        <!-- شاشة إعدادات الحفظ -->
+        <activity android:name=".MemorizationSettingsActivity" android:exported="false"/>
+
+        <!-- شاشة الحفظ والتكرار -->
+        <activity android:name=".MemorizationActivity" android:exported="false"/>
+
+        <!-- شاشة الإنجاز -->
+        <activity android:name=".CompletionActivity" android:exported="false"/>
+
+        <!-- =====  شاشة الإعدادات ===== -->
+        <activity android:name=".SettingsActivity" android:exported="false"/>
+
+        <!-- شاشة الاختبار -->
+        <activity android:name=".QuizActivity" android:exported="false"/>
+
+        <!-- شاشة طريقة الاستخدام -->
+        <activity android:name=".HowToUseActivity" android:exported="false"/>
+
+
+    </application>
+</manifest>

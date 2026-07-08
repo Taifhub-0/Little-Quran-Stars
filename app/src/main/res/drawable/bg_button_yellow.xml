@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  زر الرجوع، الإعدادات، كيف أستخدم، أزرار التحكم (السابق/التالي)  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#EDD8A0"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFF0C8"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>

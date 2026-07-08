@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Little quran stars</string>
+    <!--  ==================== الشاشة الرئيسية ====================  -->
+    <string name="main_title_green">محفظ</string>
+    <string name="main_title_yellow">القرآن</string>
+    <string name="main_title_line2">للأطفال</string>
+    <string name="main_subtitle">☀ هيا نحفظ القرآن معاً بمتعة ونجوم!</string>
+    <string name="btn_start_memorization"> ابدأ الحفظ 📖</string>
+    <string name="btn_settings">الإعدادات</string>
+    <string name="btn_how_to_use">كيف أستخدم التطبيق؟</string>
+    <!--  ==================== شاشة اختيار السورة ====================  -->
+    <string name="search_hint">ابحث عن سورة يا بطل…</string>
+    <string name="label_ayah">آية</string>
+    <!--  ==================== شاشة إعدادات الحفظ ====================  -->
+    <string name="settings_subtitle">هل أنت جاهز يا بطل؟</string>
+    <string name="label_start_verse">بداية الآيات</string>
+    <string name="label_end_verse">نهاية الآيات</string>
+    <string name="label_repeat_count">عدد مرات التكرار</string>
+    <string name="btn_start_now"> ابدأ الحفظ الآن!▷ </string>
+    <string name="btn_increment">+</string>
+    <string name="btn_decrement">−</string>
+    <!--  ==================== شاشة الحفظ ====================  -->
+    <string name="label_repeat_header">التكرار</string>
+    <string name="label_verse_progress">تقدم البطل ⭐</string>
+    <string name="label_surah_verse_badge">📖 سُورَة : آية %1$d</string>
+    <string name="label_verse_of">الآية %1$d من %2$d</string>
+    <string name="label_repeat_counter">%1$d / %2$d</string>
+    <!--  ==================== شاشة الإنجاز ====================  -->
+    <string name="completion_title">مُبارك يا بطل🎉</string>
+    <string name="completion_subtitle">بارك الله في حفظك, وزادك علماً ونوراً</string>
+    <string name="btn_repeat_again">↺ كرر مرة أخرى</string>
+    <string name="btn_back_home">⌂ العودة للرئيسية</string>
+    <string name="label_full_progress">تقدمك يا بطل ⭐</string>
+</resources>

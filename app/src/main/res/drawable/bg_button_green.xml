@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   ابدأ الحفظ، ابدأ الآن، كرر مرة أخرى  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2E9955"/>
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#3CB371"/>
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+</selector>

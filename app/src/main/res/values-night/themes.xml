@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QuranKids" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#F4B400</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="colorAccent">#F4B400</item>
+        <item name="android:windowBackground">@drawable/bg_dark_gradient</item>
+        <item name="android:statusBarColor">#070B1F</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

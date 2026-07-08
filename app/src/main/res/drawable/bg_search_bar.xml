@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  شريط البحث - شاشة اختيار السورة  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#FFFFFF"/>
+    <stroke android:width="1.5dp" android:color="#D0EDD8"/>
+    <corners android:radius="28dp"/>
+</shape>

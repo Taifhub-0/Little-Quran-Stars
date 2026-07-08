@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_primary">#F4B400</color>
+    <color name="green_dark">#1565C0</color>
+    <color name="yellow_accent">#F4B400</color>
+    <color name="yellow_light">#1A2050</color>
+
+    <color name="bg_mushaf_card">#23242A</color>
+    <color name="bg_app">#00000000</color>
+    <color name="bg_card_white">#0D1B4B</color>
+    <color name="bg_counter_blue">#191F35</color>
+    <color name="bg_counter_green">#191F35</color>
+    <color name="bg_counter_yellow">#191F35</color>
+    <color name="bg_star_circle">#191F35</color>
+    <color name="bg_verse_badge">#1A2050</color>
+
+    <color name="text_green">#FFFFFF</color>
+    <color name="search_hint_color">#070B1F</color>
+    <color name="text_gold">#F4B400</color>
+    <color name="text_dark_green">#FFFFFF</color>
+    <color name="text_gray">#FFFFFF</color>
+    <color name="text_dark_gray">#070B1F</color>
+    <color name="text_white">#070B1F</color>
+    <color name="text_black">#FFFFFF</color>
+
+    <color name="progress_fill">#F4B400</color>
+    <color name="progress_bg">#0D1B4B</color>
+
+    <color name="badge_makki_bg">#1A2050</color>
+    <color name="badge_makki_text">#070B1F</color>
+    <color name="badge_madani_bg">#0D1B4B</color>
+    <color name="badge_madani_text">#90CAF9</color>
+    <color name="badge_verse_count_bg">#0D1B4B</color>
+    <color name="badge_verse_count_text">#070B1F</color>
+    <color name="badge_surah_number_bg">#F4B400</color>
+    <color name="badge_surah_number_text">#070B1F</color>
+
+    <color name="border_card">#1E3A8A</color>
+    <color name="border_search">#1E3A8A</color>
+</resources>

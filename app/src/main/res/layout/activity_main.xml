@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+
+    <!-- نجمة يسار أعلى -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="⭐" android:textSize="44sp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="36dp" android:layout_marginStart="18dp"/>
+
+    <!-- هلال يمين -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="🌙" android:textSize="40sp" android:rotation="-30"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="14dp" android:alpha="0.85"/>
+
+    <!-- سحابة يمين أعلى -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="⛅" android:textSize="46sp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="110dp" android:layout_marginEnd="6dp" android:alpha="0.7"/>
+
+    <!-- نجمة صغيرة يسار وسط -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="✨" android:textSize="24sp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="20dp"/>
+    <!-- سحابة يمين أعلى -->
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="54dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/bg_card_white"
+        android:elevation="0dp"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloudd" />
+
+    <!-- صورة الشمس يسار (بجانب زر ابدأ) -->
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/bg_circle_white"
+        android:elevation="0dp"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sunn" />
+
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/transparent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:paddingStart="28dp" android:paddingEnd="28dp" android:paddingTop="40dp" android:paddingBottom="32dp">
+
+        <FrameLayout android:layout_width="260dp" android:layout_height="260dp" android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imgMushaf"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_card_white"
+                android:contentDescription="صورة المصحف"
+                android:padding="6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quran_cover" />
+        </FrameLayout>
+        <!--  عنوان التطبيق: محفظ القرآن  -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="rtl" android:orientation="horizontal" android:layout_marginTop="24dp" android:gravity="center">
+            <!--  محفظ  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_title_green" android:textSize="50sp" android:textStyle="bold" android:textColor="@color/text_green" android:layout_marginEnd="10dp"/>
+            <!--  القرآن  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_title_yellow" android:textSize="50sp" android:textStyle="bold" android:textColor="@color/yellow_accent"/>
+        </LinearLayout>
+        <!--  للأطفال  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_title_line2" android:textSize="50sp" android:textStyle="bold" android:textColor="@color/text_green" android:layout_marginTop="2dp"/>
+        <!--  النص الترحيبي  -->
+        <TextView
+            style="@style/Text.Subtitle"
+            android:textStyle="bold"
+            android:textColor="@color/text_black"
+            android:layout_width="272dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="36dp"
+            android:text="@string/main_subtitle" />
+        <!--  زر ابدأ الحفظ  -->
+        <!--  الأزرار الثانوية: الإعدادات  •  كيف أستخدم؟  -->
+
+        <Button
+            android:id="@+id/btnStartMemorization"
+            style="@style/Btn.Green"
+            android:layout_width="300dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="38dp"
+            android:layoutDirection="rtl"
+            android:text="@string/btn_start_memorization" />
+
+        <Button
+            android:id="@+id/btnResume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="استئناف الحفظ ↩"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btn_settings" android:text="@string/btn_settings" android:textColor="@color/text_gray" android:textStyle="bold" android:textSize="16dp"/>
+            <!--  نقطة فاصلة  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="•" android:textColor="@color/text_black" android:textSize="18sp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btn_how_to_use" android:text="@string/btn_how_to_use" android:textColor="@color/text_gray" android:textStyle="bold" android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

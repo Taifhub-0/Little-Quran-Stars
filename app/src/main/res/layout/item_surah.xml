@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/bg_card_white" android:layout_marginBottom="12dp" android:padding="14dp" android:gravity="center_vertical" android:layoutDirection="rtl">
+    <!--  رقم السورة (مربع أخضر)  -->
+    <TextView android:id="@+id/tvSurahNumber" android:layout_width="52dp" android:layout_height="52dp" android:background="@drawable/bg_button_green" android:textColor="@color/badge_surah_number_text" android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:layout_marginStart="0dp"/>
+    <!--  اسم السورة + نوعها  -->
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+        <!--  اسم السورة بالعربي  -->
+        <TextView android:id="@+id/tvSurahNameAr" style="@style/Text.SurahTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="سُورَةُ الْفَاتِحَةِ"/>
+        <!--  بادج مكية/مدنية + اسم إنجليزي  -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="4dp">
+            <TextView android:id="@+id/tvSurahType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_button_yellow" android:text="مكية" android:textColor="@color/badge_makki_text" android:textSize="12sp" android:paddingStart="8dp" android:paddingEnd="8dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_marginEnd="6dp"/>
+            <TextView android:id="@+id/tvSurahNameEn" style="@style/Text.SurahSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Al-Faatiha"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--  عدد الآيات -->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+        <!--  صورة مسجد صغيرة (placeholder)  -->
+        <ImageView android:id="@+id/imgSurahIcon" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/surah_icon" android:scaleType="centerCrop" android:background="@drawable/bg_circle_white" android:contentDescription="أيقونة السورة" android:alpha="0.5"/>
+        <!--  عدد الآيات  -->
+        <TextView android:id="@+id/tvVerseCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_button_yellow" android:textColor="@color/badge_verse_count_text" android:textSize="12sp" android:textStyle="bold" android:paddingStart="6dp" android:paddingEnd="6dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_marginTop="4dp" android:text="7 آية"/>
+    </LinearLayout>
+</LinearLayout>

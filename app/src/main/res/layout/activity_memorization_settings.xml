@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg_app" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="20dp" android:paddingBottom="30dp">
+        <!--  عنوان السورة + زر رجوع  -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layoutDirection="rtl" android:layout_marginBottom="24dp">
+            <!--  عنوان السورة  -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/tvSurahName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="إعدادات سورة النَّاس" android:textSize="22sp" android:textStyle="bold" android:textColor="@color/text_dark_green"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_subtitle" android:textSize="14sp" android:textColor="@color/text_gray" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+            <!--  زر الرجوع  -->
+            <Button android:id="@+id/btnBack" style="@style/Btn.Yellow" android:layout_width="46dp" android:layout_height="46dp" android:text="›" android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!--  كارد بداية الآيات  -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/bg_counter_blue" android:padding="18dp" android:layout_marginBottom="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_start_verse" style="@style/Text.CounterLabel"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layoutDirection="rtl" android:layout_marginTop="10dp">
+                <Button android:id="@+id/btnStartPlus" style="@style/Btn.Counter" android:text="@string/btn_increment"/>
+                <TextView android:id="@+id/tvStartVerse"
+                    style="@style/Text.CounterNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:clickable="true"
+                    android:focusable="true"/>
+                <Button android:id="@+id/btnStartMinus" style="@style/Btn.Counter" android:text="@string/btn_decrement"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  كارد نهاية الآيات  -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/bg_counter_green" android:padding="18dp" android:layout_marginBottom="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_end_verse" style="@style/Text.CounterLabel"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layoutDirection="rtl" android:layout_marginTop="10dp">
+                <Button android:id="@+id/btnEndPlus" style="@style/Btn.Counter" android:text="@string/btn_increment"/>
+                <TextView android:id="@+id/tvEndVerse"
+                    style="@style/Text.CounterNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6"
+                    android:clickable="true"
+                    android:focusable="true"/>
+                <Button android:id="@+id/btnEndMinus" style="@style/Btn.Counter" android:text="@string/btn_decrement"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  كارد عدد التكرار  - NumberPicker   -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/bg_counter_yellow" android:padding="18dp" android:layout_marginBottom="28dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_repeat_count" style="@style/Text.CounterLabel"/>
+            <NumberPicker
+                android:id="@+id/npRepeatCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!--  زر ابدأ الحفظ الآن  -->
+        <Button android:id="@+id/btnStartNow" style="@style/Btn.Green" android:text="@string/btn_start_now"/>
+    </LinearLayout>
+</ScrollView>

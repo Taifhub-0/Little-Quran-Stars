@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  ===== الأزرار =====  -->
+    <style name="Btn" />
+    <style name="Card" />
+    <style name="Text" />
+    <!--  زر أخضر كبير (ابدأ الحفظ، ابدأ الآن)  -->
+    <style name="Btn.Green">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:background">@drawable/bg_button_green</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:translationZ">8dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <!--  زر شفاف بحدود خضراء (العودة للرئيسية)  -->
+    <style name="Btn.Outline" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:background">@drawable/bg_button_outline</item>
+        <item name="android:textColor">@color/text_green</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:translationZ">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <!--  زر بيج (رجوع، الإعدادات، كيف أستخدم)  -->
+    <style name="Btn.Yellow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/bg_button_yellow</item>
+        <item name="android:textColor">@color/text_dark_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:translationZ">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <!--  زر دائرة للتشغيل  -->
+    <style name="Btn.PlayCircle">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:background">@drawable/bg_button_play</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  زر دائرة بيج (السابق/التالي)  -->
+    <style name="Btn.SideControl">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@drawable/bg_button_yellow</item>
+        <item name="android:textColor">@color/text_dark_gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  زر دائرة أبيض (+/-)  -->
+    <style name="Btn.Counter">
+        <item name="android:layout_width">46dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">@drawable/bg_circle_white</item>
+        <item name="android:textColor">@color/text_dark_gray</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:translationZ">8dp</item>
+    </style>
+    <!--  ===== النصوص =====  -->
+    <!--  عنوان السورة الكبير (اسم السورة عربي)  -->
+    <style name="Text.SurahTitle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/text_dark_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  اسم السورة إنجليزي  -->
+    <style name="Text.SurahSubtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  الرقم الكبير في الكاردات (عدد التكرار / رقم الآية)  -->
+    <style name="Text.CounterNumber">
+        <item name="android:textSize">42sp</item>
+        <item name="android:textColor">@color/text_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  عنوان الكارد (بداية الآيات، عدد التكرار...)  -->
+    <style name="Text.CounterLabel">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <!--  عنوان الشاشة الرئيسي (محفظ القرآن)  -->
+    <style name="Text.AppTitle">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  نص ثانوي صغير  -->
+    <style name="Text.Subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--  ===== الكاردات =====  -->
+    <!--  كارد عداد (بداية/نهاية/تكرار)  -->
+    <style name="Card.Counter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+
+    </style>
+    <!--  كارد السورة في القائمة  -->
+    <style name="Card.Surah">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">@drawable/bg_card_white</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:translationZ">4dp</item>
+    </style>
+</resources>
